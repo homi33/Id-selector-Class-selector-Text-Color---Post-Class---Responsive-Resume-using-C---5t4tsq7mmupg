@@ -1,9 +1,137 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Write CSS code below */
+body {
+  background-color: #a6abad;
+  display: block;
+}
+
+.main-content {
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 300px 700px;
+}
+
+.left-section {
+  grid-area: 1/1/3/2;
+  grid-column: span 1;
+  background-color: #242531;
+}
+.left-section:hover {
+  cursor: pointer;
+}
+
+.right-section {
+  background-color: #f7f7f7;
+  grid-area: 1/2/3/3;
+  grid-column: span 1 / span 2;
+}
+.right-section:hover {
+  background-color: rgb(159, 203, 231);
+  cursor: pointer;
+}
+
+/* PROFILE section */
+
+.left-content {
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.profile-image {
+  width: 60%;
+  border: 5px solid white;
+  border-radius: 30%;
+  margin: auto;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
+  color: #f5f5f5;
+  padding: 0.8rem;
+}
+
+.designation {
+  color: #94d9ea;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.description {
+  margin: 8px 0;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+  color: #f5f5f5;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.icon > a > i {
+  color: white;
+}
+
+.personal-details {
+  text-align: left;
+  vertical-align: auto;
+  color: white;
+}
+
+.skill-title {
+  padding: 1rem 0.5rem;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skill-name {
+  padding: 0.5rem;
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 0.65rem;
+  text-align: left;
+}
+.progress-bar {
+  height: 4px;
+  border: 1px white solid;
+  background-color: white;
+}
+
+.right-main-content {
+  padding: 2rem 3rem;
+}
+
+.right-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+}
+
+@media (max-width: 674) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

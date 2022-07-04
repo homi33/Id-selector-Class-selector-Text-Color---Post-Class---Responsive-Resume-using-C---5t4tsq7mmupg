@@ -26,8 +26,8 @@ body {
 }
 
 .left-section {
-  /* grid-area: 1/1/3/2;
-  grid-column: span 1; */
+  grid-area: 1/1/3/2;
+  grid-column: span 1;
   background-color: #242531;
 }
 .left-section:hover {
